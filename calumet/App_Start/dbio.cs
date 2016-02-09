@@ -53,6 +53,11 @@ namespace calumet
             }
         }
 
+        public void TruncateDB()
+        {
+            _sqlite.Execute("DELETE FROM EVENTS; DELETE FROM EVENT_RECIPIENTS; DELETE FROM EVENT_RECIPIENT_DATES; ");
+        }
+
         public IEnumerable<T> Query<T>(string sql, object parameters)
         {
             return _sqlite.Query<T>(sql, parameters);

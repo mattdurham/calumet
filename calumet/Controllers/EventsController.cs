@@ -10,7 +10,7 @@ using System.Web.Http;
 
 namespace calumet.Controllers
 {
-    public class EventsController : ApiController
+    public class EventsController : BaseController
     {
         public IEnumerable<Events> GetAllEvents()
         {
@@ -24,10 +24,9 @@ namespace calumet.Controllers
             {
                 throw new ArgumentNullException();
             }
-            
             var newID = dbio.db.AddEvent(ev);
             ev.e_id = newID;
-            ev.e_link = "http://localhost:10001/events.html?id=" + ev.e_id;
+            ev.e_link = this.BaseLink + "/events.html?id=" + ev.e_id;
             return CreatedAtRoute<Events>("DefaultApi", new { id = ev.e_id }, ev);
         }
         
