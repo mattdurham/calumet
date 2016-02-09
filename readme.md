@@ -24,11 +24,13 @@ Create Database
 	* e_name text
 	* e_creator text
 	* e_dateortime text
+	* e_link text
 1.  EventRecipients
 	* er_id int primary key
 	* er_email text
 	* er_responded bit
 	* er_eid int fk to **Events**
+	* er_link text
 1. EventRecipientDates
 	* erd_id int primary key
 	* erd_erid int fk to **EventRecipients**
