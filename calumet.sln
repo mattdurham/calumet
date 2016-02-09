@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calumet", "calumet\calumet.csproj", "{0CF3D2E1-8628-4ACF-8FF1-906CAD0D45A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "calumet.Tests", "calumet.Tests\calumet.Tests.csproj", "{BB3FAD75-DFA1-4F34-9FB4-5D9F4F65CCCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CF3D2E1-8628-4ACF-8FF1-906CAD0D45A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CF3D2E1-8628-4ACF-8FF1-906CAD0D45A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CF3D2E1-8628-4ACF-8FF1-906CAD0D45A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CF3D2E1-8628-4ACF-8FF1-906CAD0D45A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB3FAD75-DFA1-4F34-9FB4-5D9F4F65CCCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB3FAD75-DFA1-4F34-9FB4-5D9F4F65CCCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB3FAD75-DFA1-4F34-9FB4-5D9F4F65CCCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB3FAD75-DFA1-4F34-9FB4-5D9F4F65CCCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
