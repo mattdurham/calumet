@@ -22,6 +22,7 @@ namespace calumet.Controllers
         {
             if(ev == null)
             {
+                //lkjlkj
                 throw new ArgumentNullException();
             }
             var newID = dbio.db.AddEvent(ev);
