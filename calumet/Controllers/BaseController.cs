@@ -13,7 +13,7 @@ namespace calumet.Controllers
             get
             {
                 var link = "http://test";
-                if (Url != null && Url.Request != null)
+                if (Url != null && Url.Request != null && Url.Request.RequestUri != null)
                 {
                     var request = Url.Request;
                     link = request.RequestUri.AbsolutePath;

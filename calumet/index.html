@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>calumet  events</title>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.5/angular-material.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
+    
+    <meta charset="utf-8" />
+</head>
+<body>
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.js"></script>
+    <script src="https://material.angularjs.org/latest/angular-material.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular-messages.min.js"></script>
+    <script src="./jscontrollers/EventsController.js"></script>
+
+    <!-- Angular Material Library -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.0.5/angular-material.min.js"></script>
+    <div ng-app="calumet" ng-controller="EventsController as ec">
+        <md-content>
+            <md-list>
+                <md-list-item ng-repeat="event in ec.events">
+                    <p>{{ event.EventName }}</p>
+                </md-list-item>
+            </md-list>
+        </md-content>
+        <section layout="row"  layout-align="end end">
+            <md-button class="md-fab md-primary" aria-label="Add Event">
+                <md-icon md-svg-src="img/ic_add_white_48px.svg"></md-icon>
+            </md-button>
+         </section>
+</div>
+</body>
+</html>
