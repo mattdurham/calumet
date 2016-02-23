@@ -9,8 +9,10 @@ Provide a simple calendar application that will allow users to try to organize g
 ## Technologies
 
 * Web Api
-* Dapper
-* sqlite
+* ~~Dapper~~
+* ~~sqlite~~
+* Sql Server
+* Entity Framework Code First Design
 * AngularJS Material
 
 ## Phase 1 2016.02.08
@@ -36,4 +38,8 @@ Create Database
 	* erd_erid int fk to **EventRecipients**
 	* erd_startdate date
 	* erd_enddate date
+	
+## Phase 2 2016.02.17 
 
+Switched to using Entity Framework and SQL Server to be more inline with the class goals. Got basic display of events and one JS controllers and one .net controller. Changed the structure name to better be inline with Entity Framework design. Upcoming changes tonight are the ability to add events.
+	
